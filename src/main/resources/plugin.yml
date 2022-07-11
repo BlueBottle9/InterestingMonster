@@ -1,0 +1,4 @@
+name: InterestingMonster
+version: 0.0.1
+main: bluescreen9.minecraft.bukkit.interestingmonster.Main
+api-version: 1.19

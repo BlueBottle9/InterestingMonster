@@ -1,0 +1,952 @@
+{
+    "config-version":"0.0.1-MC-1.19",
+
+    "monsters":{
+        "zombie":{
+            "health":45,
+            "speed":0.3,
+            "extra-damage":2,
+            "sun-damage":false,
+            "enhance-ai":true,
+
+            "attack-knockback":0.5,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{"enable":true,"max":2,"min":0},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "xp-drops":{"enable":true,"max":10,"min":2},
+            "extra-items":[{"type":"minecraft:tnt","min-counts":0,"max-counts":1,"nbt":"{}","random-durability":false,"chance":0.1}],
+
+            "attack-effects":[]
+        },
+
+        "creeper":{
+            "health":35,
+            "speed":0.4,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "knock-resistence":0.2,
+
+            "explosion":{
+                "power":5,
+                "fire":true,
+                "break-blocks":true,
+                "damage-entities":true,
+                "wont-damage-ls":["creeper"]
+            },
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[{"type":"minecraft:gunpowder","min-counts":1,"max-counts":5,"nbt":"{}","random-durability":false,"chance":0.5}],
+            "extra-items":[],
+            "xp-drops":{"enable":true,"max":10,"min":2},
+            
+            "spawn-on-chance":0.015,
+            "can-spawn-on":[
+                {"mob":"creeper","max":2}
+            ]
+        },
+
+        "skeleton":{
+            "health":25,
+            "speed":0.35,
+            "sun-damage":true,
+            "enhance-ai":true,
+
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":5,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[{"type":"slowness","chance":0.2,"lvl":2,"time":30}]
+        },
+
+        "ghast":{
+            "health":50,
+            "enhance-ai":true,
+            "can-kill-by-returnedfireball":true,
+
+            "fireball":{
+                "power":4,
+                "fire":true,
+                "break-blocks":true,
+                "damage_entities":true,
+                "wont-damage-ls":[]
+            },
+
+            "basic-armorlvl":4,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{}
+        },
+
+        "blaze":{
+            "health":50,
+            "speed":0.2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.7,
+            "knock-resistence":0.3,
+
+            "fireball":{
+                "power":2,
+                "fire":true,
+                "break-blocks":true,
+                "damage_entities":true,
+                "wont-damage-ls":["blaze"]
+            },
+
+            "basic-armorlvl":4,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "gaint-zombie":{
+            "enable":false,
+            "spwan-in":[],
+            "as-boss":false,
+
+            "attack-knockback":1.0,
+            "knock-resistence":1.0,
+
+            "health":300,
+            "speed":1,
+            "extra-damage":0,
+            "sun-damage":true,
+            "enhance-ai":true,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "drowned":{
+            "health":45,
+            "speed":0.3,
+            "extra-damage":2,
+            "sun-damage":true,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "husk":{
+            "health":40,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":1,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "elder-guardian":{
+            "health":175,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":4,
+            "knock-resistence":1.0,
+
+            "basic-armorlvl":10,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "endermite":{
+            "health":20,
+            "speed":0.5,
+            "extra-damage":1,
+            "enhance-ai":true,
+
+            "attack-knockback":1.0,
+            "knock-resistence":1.0,
+            
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "evoker":{
+            "health":30,
+            "speed":0.3,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":1.0,
+            "knock-resistence":1.0,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "guardian":{
+            "health":50,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":0.4,
+            "knock-resistence":0.5,
+
+            "basic-armorlvl":5,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "hoglin":{
+            "health":45,
+            "speed":0.35,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "xp-drops":{},
+            "extra-items":[],
+
+            "attack-effects":[]
+        },
+
+        "magma-cube":{
+            "health":30,
+            "speed":0.3,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":0.4,
+            "knock-resistence":0.7,
+
+                        "explosion":{
+                "power":3,
+                "fire":false,
+                "break-blocks":false,
+                "damage-entities":true,
+                "wont-damage-ls":["slime"]
+            },
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "phantom":{
+            "health":40,
+            "extra-damage":2,
+            "sun-damage":true,
+            "enhance-ai":true,
+
+            "attack-knockback":0.5,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "piglin-brute":{
+            "health":55,
+            "speed":0.2,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.2,
+            "knock-resistence":0.4,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "pillager":{
+            "health":40,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.1,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+            },
+
+        "ravager":{
+            "health":40,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.5,
+            "knock-resistence":0,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "shulker":{
+            "health":50,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "basic-armorlvl":6,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "silverfish":{
+            "health":20,
+            "speed":0.5,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":4,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "slime":{
+            "health":30,
+            "speed":0.35,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.2,
+            "knock-resistence":0.4,
+
+            "explosion":{
+                "power":3,
+                "fire":false,
+                "break-blocks":false,
+                "damage-entities":true,
+                "wont-damage-ls":["slime"]
+            },
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "stray":{
+            "health":40,
+            "speed":0.4,
+            "enhance-ai":true,
+            "sun-damage":true,
+
+            "attack-knockback":0.0,
+            "knock-resistence":0.3,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "vex":{
+            "health":15,
+            "extra-damage":4,
+            "enhance-ai":true,
+
+            "attack-knockback":0.4,
+            "knock-resistence":0.0,
+
+            "basic-armorlvl":4,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "vindicator":{
+            "health":50,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.1,
+            "knock-resistence":0.1,
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "witch":{
+            "health":44,
+            "speed":0.4,
+            "enhance-ai":true,
+
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "wither-skeleton":{
+            "health":50,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.5,
+            "knock-resistence":0.3,
+
+            "basic-armorlvl":5,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "zoglin":{
+            "health":40,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":4,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "zombie-villager":{
+            "health":40,
+            "speed":0.2,
+            "extra-damage":2,
+            "enhance-ai":true,
+            "sun-damage":false,
+
+            "attack-knockback":0.2,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "enderman":{
+            "health":70,
+            "speed":0.45,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.6,
+            "knock-resistence":0.4,
+
+            "basic-armorlvl":10,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "piglin":{
+            "health":45,
+            "speed":0.3,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.4,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":2,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "spider":{
+            "health":10,
+            "speed":0.3,
+            "extra-damage":15,
+            "enhance-ai":true,
+
+            "attack-knockback":0.6,
+            "knock-resistence":0.1,
+
+            "basic-armorlvl":5,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "cave-spider":{
+            "health":20,
+            "speed":0.45,
+            "extra-damage":2,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+
+        "zombified-piglin":{
+            "health":40,
+            "speed":0.4,
+            "extra-damage":6,
+            "enhance-ai":true,
+
+            "attack-knockback":0.3,
+            "knock-resistence":0.2,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        },
+        
+        "warden":{
+        	"health":500,
+            "speed":0.3,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":0.9,
+            "knock-resistence":1.0,
+
+            "basic-armorlvl":22,
+            "extra-armorlvl":{},
+
+            "extra-equipments":[],
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+            "xp-drops":{},
+
+            "attack-effects":[]
+        }
+    },
+
+    "bosses":{
+        "wither":{
+            "health":1000,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":1.0,
+            "knock-resistence":1.0,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+
+            "attack-effects":[],
+
+            "skull":{
+                "power":4,
+                "break-blocks":true,
+                "damage-entities":true,
+                "fire":true,
+                "wont-damage-ls":[]
+            }
+        },
+
+        "ender-dragon":{
+            "health":2000,
+            "extra-damage":0,
+            "enhance-ai":true,
+
+            "attack-knockback":1.0,
+            "knock-resistence":1.0,
+
+            "basic-armorlvl":0,
+            "extra-armorlvl":{},
+
+            "extra-effects":[],
+            "extra-item-drops":[],
+            "extra-items":[],
+
+            "attack-effects":[],
+
+            "fireball":{
+                "power":4,
+                "speed":0.2,
+                "break-blocks":true,
+                "damage-entities":true,
+                "fire":true,
+                "wont-damage-ls":[]
+            }
+        }
+
+    },
+
+    "gamerules":{    
+        "monster-search-range":40,
+        "ai-fireball":{
+            "fire":true,
+            "power":2,
+            "break-blocks":true,
+            "damage-entities":true
+        }
+    },
+
+    "enhance-ai":{
+        "zombie":{
+            "extra-abilities":["tnt"]
+        },
+
+        "creeper":{
+            "extra-abilities":[]
+        },
+
+        "skeleton":{
+            "extra-abilities":[]
+        },
+
+        "ghast":{
+            "extra-abilities":[]
+        },
+
+        "blaze":{
+            "extra-abilities":[]
+        },
+
+        "gaint-zombie":{
+            "extra-abilities":[]
+        },
+
+        "drowned":{
+            "extra-abilities":[]
+        },
+
+        "husk":{
+            "extra-abilities":[]
+        },
+
+        "elder-guardian":{
+            "extra-abilities":[]
+        },
+
+        "endermite":{
+            "extra-abilities":[]
+        },
+
+        "evoker":{
+            "extra-abilities":[]
+        },
+
+        "guardian":{
+            "extra-abilities":[]
+        },
+
+        "hoglin":{
+            "extra-abilities":[]
+        },
+
+        "magma-cube":{
+            "extra-abilities":[]  
+        },
+
+        "phantom":{
+            "extra-abilities":[]
+        },
+
+        "piglin-brute":{
+            "extra-abilities":[]
+        },
+
+        "pillager":{
+            "extra-abilities":[]
+        },
+
+        "ravager":{
+            "extra-abilities":[]
+        },
+
+        "shulker":{
+            "extra-abilities":[]            
+        },
+
+        "silverfish":{
+            "extra-abilities":[]
+        },
+
+        "slime":{
+            "extra-abilities":[]
+        },
+
+        "stray":{
+            "extra-abilities":[]
+        },
+
+        "vex":{
+            "extra-abilities":[]
+        },
+
+        "vindicator":{
+            "extra-abilities":[]
+        },
+
+        "witch":{
+            "extra-abilities":[]
+        },
+
+        "wither-skeleton":{
+            "extra-abilities":[]
+        },
+
+        "zoglin":{
+            "extra-abilities":[]
+        },
+
+        "zombie-villager":{
+            "extra-abilities":[]
+        },
+
+        "enderman":{
+            "extra-abilities":[]
+        },
+
+        "piglin":{
+            "extra-abilities":[]
+        },
+
+        "spider":{
+            "extra-abilities":[]
+        },
+
+        "cave-spider":{
+            "extra-abilities":[]
+        },
+
+        "zombified-piglin":{
+            "extra-abilities":[]
+        },
+        "warden":{
+        "extra-abilities":[]
+        },
+        "wither":{
+        	"extra-abilities":[]
+        }
+    }
+}
