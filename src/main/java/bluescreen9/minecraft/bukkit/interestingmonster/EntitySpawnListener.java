@@ -40,7 +40,6 @@ public class EntitySpawnListener implements Listener{
 							}
 							
 							Mob mob = (Mob) event.getEntity();
-							 Main.MonsterEnhance.getLogger().info(mob.getType().name());
 							//视野距离
 							EntityUtil.setFollowRange(mob, Configuration.Configuration.getJSONObject("gamerules").getDoubleValue("monster-search-range"));
 							//最大生命值
