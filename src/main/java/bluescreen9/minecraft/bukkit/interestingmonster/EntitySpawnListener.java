@@ -225,7 +225,8 @@ public class EntitySpawnListener implements Listener{
 									}
 								}
 							}
-								if (event.getEntityType().equals(EntityType.GHAST) || event.getEntityType().equals(EntityType.PHANTOM)) {
+								if (event.getEntityType().equals(EntityType.GHAST) || event.getEntityType().equals(EntityType.PHANTOM) ||
+										event.getEntityType().equals(EntityType.SHULKER)) {
 									return;
 								}
 								//额外伤害
